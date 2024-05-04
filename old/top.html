@@ -1,0 +1,41 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=koi8-r" />
+<title>My Documents/site/top</title>
+<script language="JavaScript">
+function update_all()
+{
+ parent.frames[1].location = "ruleft.html"; parent.frames[2].location = "ruprofile.html";
+ }
+ </script>
+ <script language="JavaScript">
+function update_all1()
+{
+ parent.frames[1].location = "left.html"; parent.frames[2].location = "profile.html";
+ }
+ </script>
+<script language="JavaScript"> 
+function check_frames()
+{ if (parent.frames.length==0) parent.location="index.html"; }
+</script>
+</head>
+<body leftmargin="0" topmargin="0" link="#990000" alink="#FF0000" vlink="990000" onLoad="check_frames()">
+<LINK REL=STYLESHEET TYPE="TEXT/CSS" HREF="mystyle.css">
+<table width="100%" cellpadding="0" cellspacing="0" >
+  <tr><!-- Row 1 -->
+     <td width="700" class="bottomborder">
+	 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="700" height="150">
+<param name="movie" value="top1.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<embed src="top1.swf" quality="high" bgcolor="#ffffff" width="700" height="150" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object>
+  </td>
+  <td class="translate"><a href="javascript:update_all()">RUS</a> <a href="javascript:update_all1()">ENG</a> 
+  </td>
+  </tr>
+</table>
+</body>
+</html>

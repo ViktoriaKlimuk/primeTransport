@@ -1,0 +1,126 @@
+
+	.fordiv{
+	margin-left:0px;
+	margin-top:0px;
+	margin-right:0px;
+	border-left:1px solid #990000;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5;
+	font-family: Tahoma, Serif;
+	font-size: 10px;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	
+	
+}
+	.p{
+	margin-left:0px;
+	margin-top:150px;
+	margin-right:100px;
+	margin-bottom:0px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20;
+	word-spacing: 5px;
+	line-height: 18px;
+	font-family: tahoma, Serif;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	border-right:1px solid #990000;
+	border-bottom:1px solid #990000;
+	color: #000166;
+}
+ 	.img{
+	margin-top:-132px;
+	margin-right:-100px;
+	float:right;
+	
+	
+}	
+  .fortable{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+   .fordiv1{
+	margin-left:0px;
+	margin-top:0px;
+	margin-right:0px;
+	border-left:1px solid #990000;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5;
+	font-family: Tahoma, Serif;
+	font-size: 10px;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	width: auto;
+}
+ .title{
+	margin-left:0px;
+	margin-top:0px;
+	margin-right:0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5;
+	font-family: Verdana, Serif;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	color: #990000;
+}
+.forbody{
+	background-image: url(../images/bgcenter.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.translate{
+	border-bottom: 1px solid #990000;
+	background: url(../images/fiatablue.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	text-align: right;
+	font-family: Verdana, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 800;
+	padding: 10px 10px;
+}
+.bottomborder{
+border-bottom: 1px solid #990000;
+}
+.forbodys{
+	background-image: url(../images/bgservices.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.forbodyc{
+	background-image: url(../images/bgcontacts.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.formarquee{
+	color: #000166;
+}
