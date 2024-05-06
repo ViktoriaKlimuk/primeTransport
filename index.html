@@ -187,11 +187,14 @@
               <div class="col-lg-6">
                 <h1>Choose Our Quality Delivery of Your Cargo</h1>
                 <button type="button" class="btn-request" onclick="window.dialogForm.showModal();">Send a request</button>
-<!--                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni perferendis fugit modi similique, suscipit, deserunt a iure.</p>-->
               </div>
             </div>
           </div>
         </div>
+        <button class="button-form-mob" onclick="window.dialogForm.showModal();" >
+          <img src="./images/icons/email-white.svg" class="button-form-img" alt="">
+          <!-- <p class="button-form-p">Send a request</p> -->
+        </button>
         <!-- END .ftco-cover-1 -->
         <div class="ftco-service-image-1 pb-5">
           <div class="container">
@@ -875,21 +878,21 @@
         <img src="./images/menu-close.svg" class="modal-close-btn" width="16" height="16">
       </button>
       <p class="modal-article">Leave your contacts and we will call you back</p>
-      <form action="" method="post">
+      <form action="" method="post" id="form">
         <!-- name -->
         <div class="backdrop-form">
           <label for="user-name" class="modal-form-label">Name</label>
           <div class="modal-div-input">
             <input type="text" name="user-name" id="user-name" required class="modal-input-window">
-            <img src="./images/user-solid.svg" class="modal-input-icon" width="18" heught="24" alt="">
+            <img src="./images/icons/user-solid.svg" class="modal-input-icon" width="18" heught="24" alt="">
           </div>
         </div>
         <!-- Phone -->
         <div class="backdrop-form">
           <label for="user-phone" class="modal-form-label"> Phone</label>
           <div class="modal-div-input">
-            <input type="number" name="user-phone" id="user-phone" required class="modal-input-window">
-            <span class="mr-2 icon-phone modal-input-icon" width="18" heught="24"></span>
+            <input type="text" id="user-phone" name="user-phone" required class="modal-input-window">
+            <img src="./images/icons/phone.svg" class="modal-input-icon" width="18" heught="24" alt="">
           </div>
         </div>
         <!-- Email -->
@@ -897,7 +900,7 @@
           <label for="user-email" class="modal-form-label"> Email</label>
           <div class="modal-div-input">
             <input type="email" name="user-email" id="user-email" required class="modal-input-window">
-            <span class="mr-2 icon-envelope-open-o modal-input-icon" width="18" heught="24"></span>
+            <img src="./images/icons/email.svg" class="modal-input-icon" width="18" heught="24" alt="">
           </div>
         </div>
         <!-- type of transport -->
@@ -905,23 +908,23 @@
           <label for="user-transport" class="modal-form-label"> Type of transport</label>
           <div class="modal-div-input input-transport">
             <label>
-              <input type="radio" name="transport-air">
+              <input type="radio" name="transpor" value="air">
               Air
             </label>
             <label>
-              <input type="radio" name="transport-road">
+              <input type="radio" name="transport" value="road">
               Road
             </label>
             <label>
-              <input type="radio" name="transport-sea">
+              <input type="radio" name="transpor" value="sea">
               Sea
             </label>
             <label>
-              <input type="radio" name="transport-rail">
+              <input type="radio" name="transport" value="rail">
               Rail
             </label>
             <label>
-              <input type="radio" name="transport-any">
+              <input type="radio" name="transpor" value="any">
               Any
             </label>
           </div>
@@ -932,7 +935,7 @@
             <label for="direct-from" class="modal-form-label">From</label>
             <div class="modal-div-input">
               <input type="text" name="direct-from" id="direct-from" class="modal-input-window">
-              <img src="./images/from.svg" class="modal-input-icon" width="18" heught="24" alt="">
+              <img src="./images/icons/from.svg" class="modal-input-icon" width="18" heught="24" alt="">
          </div>
           </div>
             <!-- to -->
@@ -940,7 +943,7 @@
             <label for="direct-to" class="modal-form-label">To</label>
             <div class="modal-div-input">
               <input type="text" name="direct-to" id="direct-to" class="modal-input-window">
-              <img src="./images/to.svg" class="modal-input-icon" width="18" heught="24">
+              <img src="./images/icons/to.svg" class="modal-input-icon" width="18" heught="24">
          </div>
           </div>
         </div>
@@ -949,7 +952,7 @@
           <label for="weight" class="modal-form-label">Weight</label>
           <div class="modal-div-input">
             <input type="text" name="weight" id="weight" required class="modal-input-window">
-            <img src="./images/weight.svg" class="modal-input-icon" width="18" heught="24">
+            <img src="./images/icons/weight.svg" class="modal-input-icon" width="18" heught="24">
          </div>
         </div>
         <!-- volume -->
@@ -957,7 +960,7 @@
           <label for="volume" class="modal-form-label">Volume</label>
           <div class="modal-div-input">
             <input type="text" name="volume" id="volume" required class="modal-input-window">
-            <img src="./images/volume.svg" class="modal-input-icon" width="18" heught="24">
+            <img src="./images/icons/volume.svg" class="modal-input-icon" width="18" heught="24">
          </div>
         </div>
         <!-- addic inform -->
@@ -967,10 +970,11 @@
         </div>
         <!-- Send a request -->
         <button type="submit" class="mobal-btn-submit">Send</button>
+        <button id="scrollToTopBtn" class="modal-btn-up" type="button">
+          <img src="./images/icons/arrow-up-solid.svg">
+        </button>
       </form>
-      <button id="scrollToTopBtn" class="modal-btn-up" type="button">
-        <img src="./images/arrow-up-solid.svg">
-      </button>
+      
     </dialog>
 
     <script src="js/jquery-3.3.1.min.js"></script>
