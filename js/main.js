@@ -366,6 +366,17 @@ jQuery(document).ready(function($) {
 	}
   });
 
+
+  window.addEventListener('scroll', function() {
+	const scrollPosition = window.scrollY;
+	const hiddenBtnMob = document.querySelector(".hidden_btn_mob");
+	
+	if (scrollPosition > 500) { 
+	  hiddenBtnMob.style.display = 'block';
+	} else {
+	  hiddenBtnMob.style.display = 'none';
+	}
+  });
 // button whick scroll up in dialog
 const dialogForm = document.getElementById('dialogForm');
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');

@@ -1244,10 +1244,12 @@
 /* .owl-container{
   
 } */
-#hidden_btn{
+#hidden_btn,
+.hidden_btn_mob{
   display: none;
   animation: fadeIn 0.5s ease forwards;
 }
+
 .btn-request{
   font-family: "Rubik";
   background-color: #007bff; /* blue color */
