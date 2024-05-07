@@ -1021,6 +1021,11 @@
   padding: 20px;
 } */
 
+.block_35630-icon{
+  height: 81px;
+  display: flex;
+}
+
 .footer-suscribe-form .form-control {
   color: #000; }
   .footer-suscribe-form .form-control:hover, .footer-suscribe-form .form-control:active, .footer-suscribe-form .form-control:focus {
@@ -1167,6 +1172,11 @@
     display: inline-grid;
     float: none;
     margin-bottom: 30px; } }
+
+    .owl-stage{
+      display: flex;
+      flex-wrap: wrap;
+    }
 
 .blog-entry .blog-thumbnail {
   -webkit-box-flex: 0;
