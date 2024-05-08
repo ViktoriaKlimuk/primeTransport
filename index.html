@@ -958,7 +958,12 @@
         <img src="./images/menu-close.svg" class="modal-close-btn" width="16" height="16">
       </button>
       <p class="modal-article">Leave your contacts and we will call you back</p>
-      <form action="" method="post" id="form">
+      <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        
+        <!-- key  -->
+        <input type="hidden" name="access_key" value="1d94b34c-44a1-433c-961f-e8643aa8ed19">
+
+        
         <!-- name -->
         <div class="backdrop-form">
           <label for="user-name" class="modal-form-label">Name</label>

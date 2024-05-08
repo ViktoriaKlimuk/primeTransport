@@ -400,39 +400,39 @@ if (dialogForm && scrollToTopBtn) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-	const form = document.getElementById('form');
+// document.addEventListener('DOMContentLoaded', function() {
+// 	const form = document.getElementById('form');
 
-	function fillForm(event) {
-	  event.preventDefault();
+// 	function fillForm(event) {
+// 	  event.preventDefault();
 
-	  const name = form.querySelector('#user-name').value;
-	  const phone = form.querySelector('#user-phone').value;
-	  const email = form.querySelector('#user-email').value;
-	  const transport = form.querySelector('input[name="transport"]:checked');
-	  const from = form.querySelector('#direct-from').value;
-	  const to = form.querySelector('#direct-to').value;
-	  const weight = form.querySelector('#weight').value;
-	  const volume = form.querySelector('#volume').value;
-	  const comment = form.querySelector('#user-comment').value;
+// 	  const name = form.querySelector('#user-name').value;
+// 	  const phone = form.querySelector('#user-phone').value;
+// 	  const email = form.querySelector('#user-email').value;
+// 	  const transport = form.querySelector('input[name="transport"]:checked');
+// 	  const from = form.querySelector('#direct-from').value;
+// 	  const to = form.querySelector('#direct-to').value;
+// 	  const weight = form.querySelector('#weight').value;
+// 	  const volume = form.querySelector('#volume').value;
+// 	  const comment = form.querySelector('#user-comment').value;
 
 
-	  const user = {
-		name,
-		phone,
-		email,
-		transport:transport.value, // Получаем значение выбранного транспорта
-		from,
-		to,
-		weight,
-		volume,
-		comment
-	  };
+// 	  const user = {
+// 		name,
+// 		phone,
+// 		email,
+// 		transport:transport.value, // Получаем значение выбранного транспорта
+// 		from,
+// 		to,
+// 		weight,
+// 		volume,
+// 		comment
+// 	  };
 	  
-	  console.log(user);
-	  form.reset();
-	}
+// 	  console.log(user);
+// 	  form.reset();
+// 	}
 
-	form.addEventListener("submit", fillForm);
-  });
+// 	form.addEventListener("submit", fillForm);
+//   });
 
