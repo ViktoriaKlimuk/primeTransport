@@ -1347,8 +1347,12 @@ dialog{
   border: 0;
   box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
   animation: fadeIn 1s ease both;
+  font-family: "Rubik", -apple-system;
 }
 
+dialog::-webkit-scrollbar{
+  width: 10px;
+}
 
 .modal-btn {
   position: absolute;
@@ -1556,20 +1560,33 @@ form{
   position: relative;
 }
 .modal-btn-up{
+  padding: 9px;
   background-color: transparent;
-  border: none;
-  width: 35px;
+  width: 40px;
   position: absolute;
-  right: -35px;
+  right: -45px;
   bottom: 0;
   border-radius: 50%;
-  padding: 5px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .direction{
   display: flex;
   gap: 15px;
 }
+input[type="radio"]{
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type="radio"]:checked{
+  background-color: var(--base);
+  border-radius: 50%;
+}
+
 .backdrop-form {
   margin-bottom: 8px;
 }
@@ -1596,7 +1613,7 @@ form{
   padding: 0;
   transition: background-color 0.3s ease;
   &:hover{
-    background-color: #0056b3; /* Изменение цвета при наведении */
+    background-color: #0056b3; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Увеличенная тень при наведении */
     transform: translateY(-4px);
     outline: invert;
