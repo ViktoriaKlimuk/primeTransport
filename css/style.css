@@ -1603,13 +1603,6 @@ input[type="radio"]:checked{
   position: relative;
 }
 
-/* img.img-fluid {
-  opacity: 0.7 !important; /* Прозрачность изображения, если нужно */
-/* } */ 
-/* .freight-a {
-  position: relative;
-} */
-
 .freight-a {
   position: relative;
   display: block; 
@@ -1630,4 +1623,8 @@ input[type="radio"]:checked{
   display: block;
   width: 100%;
   height: auto;
+}
+
+.toggle-button.d-inline-block.d-lg-none {
+  z-index: 999;
 }
