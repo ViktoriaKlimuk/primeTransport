@@ -1280,7 +1280,6 @@
 #hidden_btn,
 .hidden_btn_mob{
   display: none;
-  animation: fadeIn 0.5s ease forwards;
 }
 
 .btn-request{
@@ -1303,18 +1302,16 @@
 
 .btn-request-hidden{
   font-family: "Rubik";
-  background-color: var(--base-color); /* blue color */
-  color: var(--white); /* white text color */
+  background-color: var(--base-color);
+  color: var(--white); 
   border: none;
   padding: 5px 10px;
-  font-size: 10px;
-  cursor: pointer;
+  font-size: 18px;
   border-radius: 25px;
   transition: 0.25s;
   position: absolute;
   right: 40px;
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: inset 6.5em 0 0 0 var(--white);
       outline: none;
       color: black;
@@ -1324,8 +1321,8 @@
     }
     @media (min-width:991px) {
       z-index: 9999;
-      right: 380px;
-      top: 21px;
+      right: 410px;
+      top: 14px;
     }
 }
 @keyframes fadeIn {
@@ -1452,7 +1449,6 @@ dialog::-webkit-scrollbar{
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   background-color: transparent;
   outline: transparent;
@@ -1627,4 +1623,10 @@ input[type="radio"]:checked{
 
 .toggle-button.d-inline-block.d-lg-none {
   z-index: 999;
+}
+html{
+  scroll-behavior: smooth;
+}
+.error {
+  border: 2px solid red;
 }
