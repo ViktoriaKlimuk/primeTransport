@@ -385,7 +385,7 @@ if (dialogForm && scrollToTopBtn) {
   dialogForm.addEventListener('scroll', function() {
     const scrollPosition = dialogForm.scrollTop;
     
-    if (scrollPosition > 50) {
+    if (scrollPosition > 60) {
       scrollToTopBtn.style.display = 'block';
     } else {
       scrollToTopBtn.style.display = 'none';
