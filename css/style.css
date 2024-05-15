@@ -1662,3 +1662,24 @@ html{
     width: 50px;
   }
 }
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.card-item {
+  display: flex;
+  gap: 25px;
+}
+.card-item-info {
+}
+.card-item-info-h4 {
+}
+.card-item-info-p {
+}
+.card-item-img {
+}
+.card-item-img-img {
+  max-width: 632px;
+}
