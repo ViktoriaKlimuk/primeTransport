@@ -400,6 +400,16 @@ if (dialogForm && scrollToTopBtn) {
   });
 }
 
+function scrollToSection(event) {
+	event.preventDefault();
+	const targetId = event.target.getAttribute('href').substring(1);
+	const targetElement = document.getElementById(targetId);
+	const yOffset = 82.78; // Высота смещения от верха страницы в пикселях
+	const y = targetElement.getBoundingClientRect().top + window.pageYOffset - yOffset;
+
+	window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
   
   
   

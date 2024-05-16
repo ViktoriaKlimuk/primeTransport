@@ -1229,7 +1229,7 @@
   &:hover {
     background-color: var(--white);
     border-color: var(--base-color); 
-    transform: scale(0.95);
+    /* transform: scale(0.95); */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     /* border-radius: 10px; */
   }
