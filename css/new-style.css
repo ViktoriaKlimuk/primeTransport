@@ -449,31 +449,6 @@ p{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Стили для рамки и фона при наведении */
-/* .freight-a {
-  position: relative;
-  display: block;
-}
-
-.freight-a::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  border: 2px solid transparent;
-  pointer-events: none;
-  z-index: 999 !important;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; 
-}
-
- .freight-a:hover:before {
-  border-color: var(--base-color); 
-  background-color: rgba(0, 0, 0, 0.2);
-} */
-
-
 .block-freight {
   position: relative;
   overflow: hidden;
