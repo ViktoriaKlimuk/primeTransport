@@ -1672,11 +1672,16 @@ html{
   display: flex;
   gap: 25px;
   align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
   @media screen and (max-width:1000px) {
     flex-direction: column;
   }
 }
 .card-item-info {
+  @media screen and (max-width:1000px) {
+    margin: 10px;
+  }
 }
 .card-item-info-h2 {
   font-weight: 500;
