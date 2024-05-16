@@ -1671,15 +1671,40 @@ html{
 .card-item {
   display: flex;
   gap: 25px;
+  align-items: center;
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+  }
 }
 .card-item-info {
 }
-.card-item-info-h4 {
+.card-item-info-h2 {
+  font-weight: 500;
+  color: #ff8b00;
+  &:hover{
+    color: #b36100;
+  }
+  @media screen and (max-width:1000px) {
+    font-size: 25px;
+  }
 }
 .card-item-info-p {
 }
 .card-item-img {
 }
 .card-item-img-img {
-  max-width: 632px;
+  max-height: calc(clamp(13.313rem, 20.326vw + 9.247rem, 25rem));
+  max-width: calc(clamp(16.875rem, 39.348vw + 9.005rem, 39.5rem));
+}
+p{
+  font-size: 19px;
+}
+@media screen and (max-width:1000px) {
+  .ove{
+    order: 1;
+  }
+  p{
+    font-size: 16px;
+  }
+  
 }
