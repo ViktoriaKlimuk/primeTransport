@@ -319,50 +319,98 @@ jQuery(document).ready(function($) {
 
 });
 
-// 4 blocks in the main part of the website
- const blocks = document.querySelectorAll('.js_images');
- const texts = document.querySelectorAll('.js_text');
- const section = document.querySelector('.main-section');
 
- let currentBlockIndex = 0;
- let currentImageIndex = 0;
+const blocks = document.querySelectorAll('.js_images');
+const texts = document.querySelectorAll('.js_text');
+const section = document.querySelector('.main-section');
 
- function showNextImage() {
-	 const currentBlock = blocks[currentBlockIndex];
-	 const images = currentBlock.querySelectorAll('img');
+let currentBlockIndex = 0;
+let currentImageIndex = 0;
 
-	 images[currentImageIndex].classList.remove('active');
-	 currentImageIndex = (currentImageIndex + 1) % images.length;
-	 images[currentImageIndex].classList.add('active');
+function showNextImage() {
+	const currentBlock = blocks[currentBlockIndex];
+	const images = currentBlock.querySelectorAll('img');
 
-	 // Обновить фон секции
-	updateSectionBackground();
- }
+	images[currentImageIndex].classList.remove('active');
+	currentImageIndex = (currentImageIndex + 1) % images.length;
+	images[currentImageIndex].classList.add('active');
 
- function showNextBlock() {
-	 blocks[currentBlockIndex].classList.remove('active');
-	 texts[currentBlockIndex].classList.remove('active');
+	updateSectionBackground(); // Обновить фон секции на основе текущего индекса блока
+}
 
-	 currentBlockIndex = (currentBlockIndex + 1) % blocks.length;
+function showNextBlock() {
+	blocks[currentBlockIndex].classList.remove('active');
+	texts[currentBlockIndex].classList.remove('active');
 
-	 blocks[currentBlockIndex].classList.add('active');
-	 texts[currentBlockIndex].classList.add('active');
- }
+	currentBlockIndex = (currentBlockIndex + 1) % blocks.length;
 
- function showNextSlide() {
-	 showNextImage();
+	blocks[currentBlockIndex].classList.add('active');
+	texts[currentBlockIndex].classList.add('active');
 
-	 if (currentImageIndex === 0) {
-		 showNextBlock();
-	 }
- }
+	updateSectionBackground(); // Обновить фон секции на основе текущего индекса блока
+}
 
- function updateSectionBackground() {
-	const backgroundClass = `background-${(currentImageIndex % 4) + 1}`;
+function showNextSlide() {
+	showNextImage();
+
+	if (currentImageIndex === 0) {
+		showNextBlock();
+	}
+}
+
+function updateSectionBackground() {
+	const backgroundClass = `background-${(currentBlockIndex % 4) + 1}`;
 	section.className = `main-section ${backgroundClass}`;
 }
- // Почати показ слайдів
- setInterval(showNextSlide, 3000);
+
+// Почати показ слайдів
+setInterval(showNextSlide, 3000);
+
+
+// 4 blocks in the main part of the website
+//  const blocks = document.querySelectorAll('.js_images');
+//  const texts = document.querySelectorAll('.js_text');
+//  const section = document.querySelector('.main-section');
+
+//  let currentBlockIndex = 0;
+//  let currentImageIndex = 0;
+
+//  function showNextImage() {
+// 	 const currentBlock = blocks[currentBlockIndex];
+// 	 const images = currentBlock.querySelectorAll('img');
+
+// 	 images[currentImageIndex].classList.remove('active');
+// 	 currentImageIndex = (currentImageIndex + 1) % images.length;
+// 	 images[currentImageIndex].classList.add('active');
+
+// 	 // Обновить фон секции
+// 	updateSectionBackground();
+//  }
+
+//  function showNextBlock() {
+// 	 blocks[currentBlockIndex].classList.remove('active');
+// 	 texts[currentBlockIndex].classList.remove('active');
+
+// 	 currentBlockIndex = (currentBlockIndex + 1) % blocks.length;
+
+// 	 blocks[currentBlockIndex].classList.add('active');
+// 	 texts[currentBlockIndex].classList.add('active');
+//  }
+
+//  function showNextSlide() {
+// 	 showNextImage();
+
+// 	 if (currentImageIndex === 0) {
+// 		 showNextBlock();
+// 	 }
+//  }
+
+//  function updateSectionBackground() {
+// 	const backgroundClass = `background-${(currentImageIndex % 4) + 1}`;
+// 	section.className = `main-section ${backgroundClass}`;
+// }
+//  // Почати показ слайдів
+//  setInterval(showNextSlide, 3000);
 
 //  appering hidden button 
  window.addEventListener('scroll', function() {
