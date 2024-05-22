@@ -322,6 +322,7 @@ jQuery(document).ready(function($) {
 // 4 blocks in the main part of the website
  const blocks = document.querySelectorAll('.js_images');
  const texts = document.querySelectorAll('.js_text');
+ const section = document.querySelector('.main-section');
 
  let currentBlockIndex = 0;
  let currentImageIndex = 0;
@@ -333,6 +334,9 @@ jQuery(document).ready(function($) {
 	 images[currentImageIndex].classList.remove('active');
 	 currentImageIndex = (currentImageIndex + 1) % images.length;
 	 images[currentImageIndex].classList.add('active');
+
+	 // Обновить фон секции
+	updateSectionBackground();
  }
 
  function showNextBlock() {
@@ -353,6 +357,10 @@ jQuery(document).ready(function($) {
 	 }
  }
 
+ function updateSectionBackground() {
+	const backgroundClass = `background-${(currentImageIndex % 4) + 1}`;
+	section.className = `main-section ${backgroundClass}`;
+}
  // Почати показ слайдів
  setInterval(showNextSlide, 3000);
 
@@ -413,7 +421,7 @@ function scrollToSection(event) {
 
 $(document).ready(function(){
 	$('.owl-carousel').owlCarousel({
-	  loop: true,
+	  loop: false,
 	  margin: 10,
 	  nav: true,
 	  autoplay: true,
@@ -423,7 +431,7 @@ $(document).ready(function(){
 		  items: 1
 		},
 		600: {
-		  items: 2
+		  items: 1
 		},
 		1000: {
 		  items: 3

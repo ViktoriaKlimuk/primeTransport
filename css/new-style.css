@@ -556,3 +556,40 @@ p{
   position: absolute;
   right: -25px; /* Сдвигаем вправо */
 }
+
+.main-section{
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  transition: background-image 1s ease-in-out;
+  z-index: -1; /* Ensures the background is behind other content */
+}
+
+.main-section.background-1 {
+  background-image: url('../images/cargo_sea_big.jpg');
+}
+
+.main-section.background-2 {
+  background-image: url('../images/cargo_air_big.jpg');
+}
+
+.main-section.background-3 {
+  background-image: url('../images/cargo_delivery_big.jpg');
+}
+
+.main-section.background-4 {
+  background-image: url('../images/cargo-railway-big.jpg');
+}
