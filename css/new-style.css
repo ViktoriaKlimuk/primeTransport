@@ -517,3 +517,42 @@ p{
     height: 200px;
   }
 }
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  font-size: 2em; 
+  width: 50px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+  line-height: 50px; /* Выравнивание текста по вертикали */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон кнопок */
+  color: white; /* Цвет стрелок */
+  border-radius: 50%; /* Закругленные кнопки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Меняем цвет фона при наведении */
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: -25px; /* Сдвигаем влево */
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: -25px; /* Сдвигаем вправо */
+}
