@@ -1299,7 +1299,11 @@
 
 .ftco-blocks-cover-1 .ftco-service-image-1 {
   margin-top: 10px;
-  position: relative; }
+  position: relative; 
+  @media screen and (max-width:700px) {
+    margin-top: 30px;
+  }
+}
 
 .ftco-cover-1 {
   background-size: cover;

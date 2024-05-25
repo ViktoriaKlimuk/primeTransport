@@ -573,19 +573,19 @@ p{
 }
 
 .main-section.background-1 {
-  background-image: url('../images/cargo_sea_big.jpg');
+  background-image: url('../images/main-bg/blur-sea.png');
 }
 
 .main-section.background-2 {
-  background-image: url('../images/cargo_air_big.jpg');
+  background-image: url('../images/main-bg/blur-air.png');
 }
 
 .main-section.background-3 {
-  background-image: url('../images/cargo_delivery_big.jpg');
+  background-image: url('../images/main-bg/blur-road.png');
 }
 
 .main-section.background-4 {
-  background-image: url('../images/cargo-railway-big.jpg');
+  background-image: url('../images/main-bg/blur-rail.png');
 }
 .main_title_h1{
   color: #fff;
