@@ -467,23 +467,55 @@ function scrollToSection(event) {
 	window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
+// $(document).ready(function(){
+// 	$('.owl-carousel').owlCarousel({
+// 	  loop: true,
+// 	  margin: 10,
+// 	  nav: true,
+// 	  autoplay: true,
+// 	  autoplayTimeout: 3000, // Интервал прокрутки (3000 миллисекунд = 3 секунды)
+// 	  responsive: {
+// 		0: {
+// 		  items: 1
+// 		},
+// 		600: {
+// 		  items: 1
+// 		},
+// 		1000: {
+// 		  items: 3
+// 		}
+// 	  }
+// 	});
+//   });
 $(document).ready(function(){
-	$('.owl-carousel').owlCarousel({
-	  loop: false,
-	  margin: 10,
-	  nav: true,
-	  autoplay: true,
-	  autoplayTimeout: 3000, // Интервал прокрутки (3000 миллисекунд = 3 секунды)
-	  responsive: {
-		0: {
-		  items: 1
-		},
-		600: {
-		  items: 1
-		},
-		1000: {
-		  items: 3
+	function initOwlCarousel() {
+	  var loopValue = $(window).width() >= 1000 ? false : true;
+	  $('.owl-carousel').owlCarousel({
+		loop: loopValue,
+		margin: 10,
+		nav: true,
+		autoplay: true,
+		autoplayTimeout: 3000, // Интервал прокрутки (3000 миллисекунд = 3 секунды)
+		responsive: {
+		  0: {
+			items: 1
+		  },
+		  600: {
+			items: 1
+		  },
+		  1000: {
+			items: 3
+		  }
 		}
-	  }
+	  });
+	}
+  
+	// Initial initialization
+	initOwlCarousel();
+  
+	// Reinitialize on window resize
+	$(window).resize(function() {
+	  $('.owl-carousel').trigger('destroy.owl.carousel');
+	  initOwlCarousel();
 	});
   });
