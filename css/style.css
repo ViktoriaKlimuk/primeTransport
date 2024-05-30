@@ -1448,6 +1448,8 @@
   display: block;
 }
 .main_images-item img {
+  width: 130px;
+  height: 130px;
   position: absolute;
   top: 0;
   left: 0;
