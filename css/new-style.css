@@ -658,3 +658,7 @@ html{
 .card-item-info-p{
   text-indent:0.5rem
 }
+.section-footer{
+  display: flex;
+  justify-content: space-between;
+}
