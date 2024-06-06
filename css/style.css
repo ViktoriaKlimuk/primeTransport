@@ -574,7 +574,7 @@
   width: 300px;
   position: fixed;
   right: 0;
-  z-index: 2000;
+  z-index: 9999999;
   padding-top: 20px;
   background: var(--white);
   height: calc(100vh);
@@ -1386,7 +1386,7 @@
   display: flex;
   align-items: flex-start;
   position: relative;
-  z-index: 9999;
+  z-index: 999;
 }
 .main_images-item {
   width: 130px;
