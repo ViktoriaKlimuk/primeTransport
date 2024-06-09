@@ -37,7 +37,10 @@ p{
 
 .container {
   width: 100%;
-  max-width: 75.625rem;
+  @media screen and (max-width: 1000px) {
+    max-width: 75.625rem;  
+  }
+  
 }
 .ftco-cover-1-section{
   padding: 30px 15px;
@@ -410,20 +413,13 @@ html{
   border: 2px solid red;
 }
 .owl-carousel .service .img-item {
-  height: clamp(10.938rem, 29.63vw + 5.382rem, 15.938rem);
+  /* height: clamp(10.938rem, 29.63vw + 5.382rem, 15.938rem); */
 
   @media (min-width: 992px) {
     height: 200px;
   }
 }
 
-@media (min-width: 992px) {
-  .owl-carousel .owl-item:last-child {
-    margin-top: 0;
-    margin-right: 44.5% !important;
-    margin-left: auto;
-  }
-}
 .logo-svg{
   margin: 0 10px 0 0; 
   @media (min-width: 300px) {
@@ -452,11 +448,13 @@ html{
 }
 .card-item-info {
   @media screen and (max-width:1000px) {
-    padding: 10px;
+    padding: 15px;
 
   };
   @media screen and (min-width:1001px) {
     width: 60%;
+    /* padding: 10px; */
+    margin: 15px;
   }
 }
 .card-item-info-h2 {
@@ -657,5 +655,15 @@ html{
 @media screen and (max-width:1000px) {
   .ove{
     order: 1;
+  }
+}
+@media (min-width: 992px) {
+  .owl-carousel .owl-item:last-child {
+    margin-top: 0;
+    margin-right: 44.5% !important;
+    margin-left: auto;
+  }
+  .card-item-img-img{
+    height: clamp(8.5rem, 23.778vw + 3.744rem, 21.875rem);
   }
 }
