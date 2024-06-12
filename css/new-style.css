@@ -623,7 +623,7 @@ html{
   }
 }
 .main-section.background-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-ship1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-ship2.jpg');
 }
 
 .main-section.background-2 {
@@ -638,7 +638,7 @@ html{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-rail.jpg');
 }
 .main-section.background-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-multi.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-multi1.jpg');
 }
 .about-section-p{
   text-align: justify;
