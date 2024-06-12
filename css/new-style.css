@@ -38,7 +38,7 @@ p{
 .container {
   width: 100%;
   @media screen and (max-width: 1000px) {
-    max-width: 75.625rem;  
+    max-width: 75.625rem !important;  
   }
   
 }
@@ -608,9 +608,9 @@ html{
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 44%;
   height: 100%;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
   z-index: 1;
 }
 @media screen and (max-width: 770px) {
