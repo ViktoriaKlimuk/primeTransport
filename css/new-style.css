@@ -52,16 +52,6 @@ a:hover{
   color: var(--white);
   margin-bottom: 1rem;
 }
-/* .main_title_container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
-/* #hidden_btn,
-.hidden_btn_mob{
-  display: none;
-} */
 
 .btn-request {
   display: flex;
@@ -113,32 +103,6 @@ a:hover{
   transform: translateY(-50%);
 }
 
-
-/*  */
-/* .btn-request-hidden{
-  background-color: var(--base-color-accent);
-  color: var(--white); 
-  border: none;
-  padding: 5px 10px;
-  font-size: 18px;
-  border-radius: 25px;
-  transition: 0.25s;
-  position: absolute;
-  right: 40px;
-    &:hover {
-      box-shadow: inset 6.5em 0 0 0 var(--white);
-      outline: none;
-      color: var(--black);
-    }
-    @media (max-width:440px) {
-      display: none !important;
-    }
-    @media (min-width:991px) {
-      z-index: 9999;
-      right: 410px;
-      top: 14px;
-    }
-} */
 dialog{
   position: fixed;
   top: 50%;
@@ -162,7 +126,6 @@ dialog{
   }
 }
 
-
 .modal-btn {
   position: absolute;
   top: 15px;
@@ -180,21 +143,6 @@ dialog{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-
-/* .modal-btn:is(:hover),
-.modal-btn-up:is(:hover) {
-  background-color: var(--base);
-  border: none;
-}  */
-
- /* .modal-close_btn {
-  fill: var(--navy-blue);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .modal-btn:is(:hover, :focus) .modal-close_btn {
-  fill: var(--white);
-} */
 
  .modal-article {
   font-size: larger;
@@ -242,10 +190,6 @@ dialog{
   fill: var(--base);
 }
 
-/* .modal-input-icon:is(:focus) {
-  fill: var(--iris);
-} */
-
 .modal-area-window {
   width: 100%;
   height: 75px;
@@ -266,22 +210,6 @@ dialog{
 .modal-area-window:focus {
   border: 1px solid var(--iris);
 }
-
-/* .modal-div-input input:focus + img {
-  fill: #4d5ae5;
-} */
-
-/* .backdrop-form-comment {
-  margin-bottom: 16px;
-} */
-
-/* .modal-check {
-  margin-bottom: 24px;
-} */
-
-/* .modal-check > input {
-  margin-right: 8px;
-} */
 
 .mobal-btn-submit {
   display: block;
@@ -304,10 +232,6 @@ dialog{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* input::-ms-check {
-  fill: #404bbf;
-} */
-
 @media screen and (max-width: 428px) {
   .modal {
     min-height: 220px;
@@ -320,21 +244,7 @@ dialog{
     min-width: 220px;
   }
 }
-/* form{
-  position: relative;
-} */
-/* .modal-btn-up{
-  display: none;
-  padding: 9px;
-  background-color: transparent;
-  width: 40px;
-  position: absolute;
-  right: -45px;
-  bottom: 0;
-  border-radius: 50%;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-} */
+
 .direction{
   display: flex;
   gap: 15px;
@@ -388,13 +298,7 @@ input[type="radio"]:checked{
   width: 25px;
   height: 30px;
 }
-/* .button-form-p{
-  display: none;
-} */
-/* .button-form-p:hover{
-  width: 169px;
-  display: flex;
-} */
+
 .text-primary{
   font-size: clamp(1.125rem, -0.375rem + 8vw, 1.5rem);
   font-family: "BIZ UDGothic", sans-serif;
@@ -445,7 +349,6 @@ input[type="radio"]:checked{
   };
   @media screen and (min-width:1001px) {
     width: 60%;
-    /* padding: 10px; */
     margin: 15px;
   }
 }
@@ -486,7 +389,8 @@ input[type="radio"]:checked{
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
-.block-freight:hover:before{
+.block-freight:hover:before,
+.block-freight-div:hover:before{
   border-color: var(--base-color-accent); 
   background-color: rgba(0, 0, 0, 0.5);
 } 
@@ -495,6 +399,18 @@ input[type="radio"]:checked{
 }
 .block-freight-div{
   position: relative;
+}
+.block-freight-div::before{
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  border: 2px solid transparent;
+  pointer-events: none;
+  z-index: 999 ;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 .block-freight-div-h3{
   position: absolute;
@@ -603,7 +519,7 @@ input[type="radio"]:checked{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-rail.jpg');
 }
 .main-section.background-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-multi1.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-multi1.jpg');
 }
 .about-section-p{
   text-align: justify;
