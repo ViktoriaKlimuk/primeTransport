@@ -245,11 +245,22 @@ jQuery(document).ready(function($) {
 	};
 	// siteDatePicker();
 
-	var siteSticky = function() {
-		$(".js-sticky-header").sticky({topSpacing:0});
-	};
-	siteSticky();
+	// var siteSticky = function() {
+	// 	$(".js-sticky-header").sticky({topSpacing:0});
+	// };
+	// siteSticky();
 
+	$(document).ready(function() {
+		var siteSticky = function() {
+			if ($.fn.sticky) {
+				$(".js-sticky-header").sticky({topSpacing:0});
+			} else {
+				console.error("Sticky plugin is not loaded.");
+			}
+		};
+		siteSticky();
+	});
+	
 	// navigation
   var OnePageNavigation = function() {
     var navToggler = $('.site-menu-toggle');
@@ -366,19 +377,7 @@ function updateSectionBackground() {
 // Почати показ слайдів
 setInterval(showNextSlide, 2000);
 
-//  appering hidden button 
- window.addEventListener('scroll', function() {
-	const scrollPosition = window.scrollY;
-  
-	if (scrollPosition > 500) { 
-	  document.getElementById('hidden_btn').style.display = 'block';
-	} else {
-	  document.getElementById('hidden_btn').style.display = 'none';
-	}
-  });
-
-
-  window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function() {
 	const scrollPosition = window.scrollY;
 	const hiddenBtnMob = document.querySelector(".hidden_btn_mob");
 	
@@ -388,28 +387,6 @@ setInterval(showNextSlide, 2000);
 	  hiddenBtnMob.style.display = 'none';
 	}
   });
-// button whick scroll up in dialog
-const dialogForm = document.getElementById('dialogForm');
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-if (dialogForm && scrollToTopBtn) {
-  dialogForm.addEventListener('scroll', function() {
-    const scrollPosition = dialogForm.scrollTop;
-    
-    if (scrollPosition > 60) {
-      scrollToTopBtn.style.display = 'block';
-    } else {
-      scrollToTopBtn.style.display = 'none';
-    }
-  });
-
-  scrollToTopBtn.addEventListener('click', function() {
-    dialogForm.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
 
 function scrollToSection(event) {
 	event.preventDefault();
