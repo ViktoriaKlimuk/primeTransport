@@ -536,7 +536,7 @@ input[type="radio"]:checked{
 }
 
 .main-section.background-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-truck.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-truck.jpeg');
 }
 
 .main-section.background-4 {
