@@ -359,7 +359,6 @@ input[type="radio"]:checked{
 }
 .card-item {
   display: flex;
-  gap: 25px;
   align-items: center;
   background-color: var(--white);
   border-radius: 5px;
@@ -368,13 +367,10 @@ input[type="radio"]:checked{
   }
 }
 .card-item-info {
-  @media screen and (max-width:1000px) {
-    padding: 15px;
+  padding: 15px;
 
-  };
   @media screen and (min-width:1001px) {
     width: 60%;
-    margin: 15px;
   }
 }
 .card-item-info-h2 {
@@ -445,7 +441,6 @@ input[type="radio"]:checked{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  width: 150px;
 }
 .block-freight-div-h3 > a{
   color: var(--white) ;
@@ -563,11 +558,11 @@ input[type="radio"]:checked{
     order: 1;
   }
 }
-@media screen and (min-width:1001px) {
+/* @media screen and (min-width:1001px) {
   .odd:nth-child(odd){
     margin: 0 0 0 35px;
   }
-}
+} */
 @media (min-width: 992px) {
   .owl-carousel .owl-item:last-child {
     margin-top: 0;
