@@ -321,7 +321,7 @@ input[type="radio"]:checked{
 }
 
 .text-primary{
-  font-size: clamp(1.125rem, -0.375rem + 8vw, 1.5rem);
+  font-size: clamp(1.75rem, 1.5687rem + 0.9669vw, 2.1875rem);
   font-family: "BankGothic", sans-serif;
   font-weight: 700;
 }
@@ -533,8 +533,7 @@ input[type="radio"]:checked{
 .main-section.background-5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg/bg-multi.jpeg');
 }
-.about-section-p,
-.card-item-info-p{
+.about-section-p{
   text-align: justify;
   
 }
