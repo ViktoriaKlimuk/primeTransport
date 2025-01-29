@@ -321,7 +321,7 @@ input[type="radio"]:checked{
 }
 
 .text-primary{
-  font-size: clamp(1.75rem, 1.5687rem + 0.9669vw, 2.1875rem);
+  /* font-size: clamp(1.75rem, 1.5687rem + 0.9669vw, 2.1875rem); */
   font-family: "BankGothic", sans-serif;
   font-weight: 700;
 }
